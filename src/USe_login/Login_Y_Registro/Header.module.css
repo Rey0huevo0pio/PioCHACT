@@ -1,0 +1,28 @@
+/* Header.module.css */
+.nam {
+  width: 100%;
+  padding: 0px 0px;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: rgba(221, 25, 1, 1);
+  color: aquamarine;
+  z-index: 10;
+  backdrop-filter: blur(40px);
+}
+
+.nam .imf {
+  width: 125px;
+  border-radius: 10%;
+  margin-right: 0px; /* Controla la separación entre la imagen y el texto */
+}
+
+.nam .hw {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 30%;
+}

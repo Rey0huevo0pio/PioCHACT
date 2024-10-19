@@ -1,0 +1,19 @@
+/* Estilo global básico */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Clase específica para aplicar el fondo */
+.body-with-background {
+  background: url("./assets/logo/fondo_2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.body-boy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

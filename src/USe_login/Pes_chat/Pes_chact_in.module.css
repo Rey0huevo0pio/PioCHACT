@@ -1,0 +1,264 @@
+.Contai {
+  padding: 0;
+  margin: 0;
+
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------------Header-------------------*/
+.En_hed {
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+  min-height: 130px;
+  margin: 0;
+  align-items: center;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.log {
+  display: flex;
+  align-items: center;
+}
+
+/*----------buscador-----------*/
+.bus {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.int {
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+  backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.int .btn_bus {
+  background: transparent;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #333;
+
+}
+
+
+::placeholder {
+  color: rgb(150, 150, 150);
+}
+
+.Icn_bus {
+  display: flex;
+  border: none;
+  margin: 0;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 1px solid red;
+  background-color: pink;
+}
+
+.Icn_bus:hover {
+  transform: scale(1.1);
+}
+
+.int input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.int input:focus {
+  border: 2px solid #a82222;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*----------buscador-----------------------*/
+/*----------likes--------------------------*/
+.nam {
+  padding: 25px;
+}
+
+.nam .Lik_a {
+  text-decoration: none;
+  padding-right: 25px;
+  font-size: 22px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nam .Lik_a:hover {
+  color: bisque;
+}
+
+.imf {
+  width: 125px;
+  border-radius: 25Px;
+  margin-right: 50px;
+
+}
+
+/*-------------Inicio-------------------------*/
+.hw {
+  font-size: 45px;
+  animation: colorChange 5s infinite;
+  /* Animación que se repite infinitamente cada 5 segundos */
+  transition: transform 0.5s;
+}
+/*-------------fin inicio--------------------------------*/
+/*------maeine-------*/
+.maine {
+
+  margin-top: 130px;
+  padding: 0%;
+  border: 1px solid red;
+  height: auto;
+  display: flex;
+ 
+
+}
+
+.cuadro_1 {
+  width: 500px;
+  height: auto;
+  background-color: #333;
+  margin-right: 25px;
+  
+  
+
+}
+.cuadro_2{
+  width:auto;
+
+  height: 200px;
+  background-color: #b64545;
+
+}
+
+
+.lisOpcion {
+  list-style-type: none; /* Eliminar los puntos de lista */
+  margin: 0;
+  padding: 0 15px;
+  padding-bottom: 15px;
+ 
+ 
+}
+
+.OpcionItem {
+  display: flex; /* Alinea el texto y el icono en la misma línea */
+  align-items: center; /* Alinea verticalmente el texto y el icono */
+  margin-bottom: 45px; /* Espacio entre cada opción */
+  
+}
+
+.Ocion {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin-right: 10px; /* Espacio entre el texto y el icono */
+}
+
+.icono {
+  font-size: 30px; /* Tamaño del icono */
+  color: black; /* Color del icono, puedes personalizarlo */
+}
+
+.lisT {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  margin: 15px 0px;
+
+}
+/* Definición de la animación para cambiar colores */
+@keyframes colorChange {
+  0% {
+    color: rgb(18, 18, 19);
+    /* Color inicial */
+  }
+
+  25% {
+    color: rgb(255, 100, 100);
+    /* Cambia a rojo */
+  }
+
+  50% {
+    color: rgb(50, 56, 50);
+    /* Cambia a verde */
+  }
+
+  75% {
+    color: rgba(167, 32, 32, 0.137);
+    /* Cambia a amarillo */
+  }
+
+  100% {
+    color: rgb(100, 100, 255);
+    /* Vuelve al color inicial */
+  }
+}
+
+/*------------------------------*/
+
+/*----------------------------------------------------*/
+/* Media query para pantallas más pequeñas */
+@media (max-width: 700px) {
+  .En_hed {
+    flex-direction: column;
+    padding: 20px 10px;
+    min-height: auto;
+  }
+
+  .Ma_cur {
+    padding: 10px;
+  }
+
+  .Ted {
+    font-size: 28px;
+  }
+
+  .imf {
+    width: 100px;
+  }
+}
+
+@media (max-width: 00px) {
+  .Ma_cur {
+    padding: 10px;
+  }
+
+  .Ted {
+    font-size: 24px;
+  }
+
+  .imf {
+    width: 80px;
+  }
+}
